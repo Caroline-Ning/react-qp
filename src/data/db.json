@@ -1,0 +1,42 @@
+{
+  "blogs": [
+    {
+      "title": "Can Sci-fi change our behavior towards climate change?",
+      "body": "https://www.clubhouse.com/room/mWO6gzjy?utm_medium=ch_room_xerc&utm_campaign=j24X6ivwc0EnmCitvMfvdw-54140 ",
+      "author": "Catarina Cunha",
+      "date": "Feb 7",
+      "viewsNum": 64,
+      "commentsNum": 0,
+      "likesNum": 0,
+      "id": 1
+    },
+    {
+      "title": "title 2",
+      "body": "link 2",
+      "author": "author 2",
+      "date": "Feb 7",
+      "viewsNum": 64,
+      "commentsNum": 0,
+      "likesNum": 0,
+      "id": 2
+    },
+    {
+      "title": "title 3",
+      "body": "link 3",
+      "author": "author 3",
+      "date": "Feb 7",
+      "viewsNum": 64,
+      "commentsNum": 0,
+      "likesNum": 0,
+      "id": 3
+    }
+  ],
+  "webs": [
+    {
+      "displayName": "person 1",
+      "imageSrc": "/images/person1.jpg",
+      "id": 1
+    },
+    { "displayName": "person 2", "imageSrc": "/images/person2.jpg", "id": 2 }
+  ]
+}
