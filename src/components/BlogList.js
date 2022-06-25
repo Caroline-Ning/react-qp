@@ -5,20 +5,11 @@ import {
   CardActions,
   IconButton,
   Typography,
+  Link,
 } from "@mui/material";
 import { FavoriteBorderOutlined, ShareOutlined } from "@mui/icons-material";
 import { Container } from "@mui/system";
 
-import { Link } from "react-router-dom";
-const styles = {
-  title: {
-    color: "#666",
-  },
-  link: {
-    color: "#000",
-    textDecoration: "black",
-  },
-};
 const BlogList = ({ blogs, title }) => {
   return (
     <Container
@@ -28,9 +19,11 @@ const BlogList = ({ blogs, title }) => {
         paddingTop: 5,
       }}
     >
-      <h2 style={styles.title}>{title}</h2>
+      <Typography sx={{ marginBottom: 4 }}>All Posts</Typography>
       {blogs.map((blog) => (
         <Card
+          variant="outlined"
+          square={true}
           sx={{
             marginBottom: 5,
           }}
@@ -50,9 +43,19 @@ const BlogList = ({ blogs, title }) => {
             >
               {blog.date}
             </Typography>
-            <Link to={`/blogs/${blog.id}`} style={styles.link}>
+            <Link
+              href={`/blogs/${blog.id}`}
+              sx={{
+                color: "#000",
+                textDecoration: "none",
+                ":hover": {
+                  color: "primary.main",
+                },
+              }}
+            >
               <Typography
-                variant="h6"
+                variant="h5"
+                fontWeight="900"
                 sx={{
                   marginBottom: 2,
                 }}
@@ -78,18 +81,23 @@ const BlogList = ({ blogs, title }) => {
                 color="textSecondary"
                 component="p"
                 sx={{
-                  marginLeft: 1.5,
+                  marginLeft: 1,
                 }}
               >
                 Comments {blog.commentsNum}
               </Typography>
             </div>
-            <IconButton
-              aria-label="add to favorites"
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
               sx={{
                 marginLeft: 85,
               }}
             >
+              {blog.likesNum}
+            </Typography>
+            <IconButton aria-label="add to favorites" sx={{ marginLeft: 0.5 }}>
               <FavoriteBorderOutlined />
             </IconButton>
             <IconButton aria-label="share">

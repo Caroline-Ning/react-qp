@@ -4,6 +4,7 @@ import BlogIndex from "./pages/AllBlogs";
 import Blog from "./pages/Blog";
 import NotFound from "./components/NotFound";
 import WebTeam from "./pages/WebTeam";
+import Person from "./pages/Person";
 // json-server --watch src/data/db.json --port 8000
 // npm start
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/blogs" element={<BlogIndex />}></Route>
           <Route path="/blogs/:id" element={<Blog />}></Route>
           <Route path="/our-team/web" element={<WebTeam />}></Route>
+          <Route path="/our-team/web/:id" element={<Person />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </div>
