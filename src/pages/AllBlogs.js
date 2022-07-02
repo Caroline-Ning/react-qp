@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch";
 import BlogListM from "../components/BlogList";
 import { CssBaseline } from "@mui/material";
 
-const BlogIndex = () => {
+const AllBlogs = () => {
   const {
     data: blogs,
     isPending,
@@ -32,4 +32,4 @@ const BlogIndex = () => {
     </div>
   );
 };
-export default BlogIndex;
+export default AllBlogs;

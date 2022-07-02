@@ -35,18 +35,8 @@
     {
       "displayName": "person 1",
       "imageSrc": "/images/person1.jpg",
-      "id": 1
+      "id": "test"
     },
-    { "displayName": "person 2", "imageSrc": "/images/person2.jpg", "id": 2 }
-  ],
-  "htmls": [
-    {
-      "id": 1,
-      "html": "<!DOCTYPE html><html lang=\"en\"><head>    <meta charset=\"UTF-8\">    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">    <title>Document</title></head><body>    <a href=\"/our-team/web\">Back</a>    <h1>Test 1</h1></body></html>"
-    },
-    {
-      "id": 2,
-      "html": "<!DOCTYPE html><html lang=\"en\"><head>    <meta charset=\"UTF-8\">    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">    <title>Document</title></head><body>    <a href=\"/our-team/web\">Back</a>    <h1>Test 2</h1></body></html>"
-    }
+    { "displayName": "person 2", "imageSrc": "/images/person2.jpg", "id": "zt" }
   ]
 }
