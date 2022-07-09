@@ -10,7 +10,7 @@ import {
 import { FavoriteBorderOutlined, ShareOutlined } from "@mui/icons-material";
 import { Container } from "@mui/system";
 
-const BlogList = ({ blogs, title }) => {
+const BlogList = ({ blogs }) => {
   return (
     <Container
       sx={{
@@ -19,7 +19,7 @@ const BlogList = ({ blogs, title }) => {
         paddingTop: 5,
       }}
     >
-      <Typography sx={{ marginBottom: 4 }}>All Posts</Typography>
+      <Typography sx={{ marginBottom: 4 }}>All Blogs</Typography>
       {blogs.map((blog) => (
         <Card
           variant="outlined"

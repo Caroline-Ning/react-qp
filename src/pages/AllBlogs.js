@@ -2,7 +2,7 @@ import React from "react";
 
 import useFetch from "../hooks/useFetch";
 import BlogListM from "../components/BlogList";
-import { CssBaseline } from "@mui/material";
+import { Typography } from "@mui/material";
 
 const AllBlogs = () => {
   const {
@@ -11,24 +11,14 @@ const AllBlogs = () => {
     error,
   } = useFetch("http://localhost:8000/blogs");
 
-  const styles = {
-    custom: {
-      margin: 0,
-      background: `url(images/bg.jpeg) no-repeat center center fixed`,
-      backgroundSize: "cover",
-      paddingTop: 250,
-    },
-  };
-
   return (
     <div>
-      {" "}
-      <CssBaseline />
-      <div style={styles.custom}>
+      <Typography variant="blogbg">
         {error && <div>{error}</div>}
         {isPending && <div>Loading...</div>}
-        <BlogListM blogs={blogs} title="All Posts" />
-      </div>
+        <Typography variant="header">BLOGS</Typography>
+        <BlogListM blogs={blogs} />
+      </Typography>
     </div>
   );
 };

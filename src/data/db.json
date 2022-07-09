@@ -37,6 +37,14 @@
       "imageSrc": "/images/person1.jpg",
       "id": "test"
     },
-    { "displayName": "person 2", "imageSrc": "/images/person2.jpg", "id": "zt" }
+    {
+      "displayName": "person 2",
+      "imageSrc": "/images/person2.jpg",
+      "id": "zt"
+    },
+    { "displayName": "person 3", "imageSrc": "/images/person2.jpg", "id": "3" },
+    { "displayName": "person 4", "imageSrc": "/images/person2.jpg", "id": "4" },
+    { "displayName": "person 5", "imageSrc": "/images/person2.jpg", "id": "5" },
+    { "displayName": "person 6", "imageSrc": "/images/person2.jpg", "id": "6" }
   ]
 }

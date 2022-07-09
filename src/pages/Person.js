@@ -18,12 +18,12 @@ export default function PersonDetail() {
   }, [id]);
 
   return (
-    <>
+    <div>
       <div
         dangerouslySetInnerHTML={{
           __html: curHtml,
         }}
       ></div>
-    </>
+    </div>
   );
 }

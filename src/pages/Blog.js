@@ -14,7 +14,6 @@ const Blog = () => {
 
   return (
     <div>
-      <CssBaseline />
       <div style={styles.body}>
         <BlogDetail />
         <Comments />

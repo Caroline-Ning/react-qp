@@ -27,7 +27,7 @@ const Blog = () => {
         paddingTop: 5,
       }}
     >
-      <Typography sx={{ marginBottom: 2 }}>All Posts</Typography>
+      <Typography sx={{ marginBottom: 2 }}>Blog</Typography>
       <Card
         variant="outlined"
         sx={{
@@ -74,7 +74,7 @@ const Blog = () => {
             {blog.body}
           </Typography>
         </CardContent>
-        <CardActions disableSpacing>
+        <CardActions disaeSpacing>
           <div style={{ display: "flex" }}>
             <Typography
               sx={{
